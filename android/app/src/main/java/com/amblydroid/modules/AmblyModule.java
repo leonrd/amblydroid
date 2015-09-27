@@ -11,6 +11,7 @@ import java.io.File;
 
 public class AmblyModule extends ReactContextBaseJavaModule {
 
+    public final static String TAG = "AMBLY";
     private static String sCompilerOutputDirectoryPath;
 
     public AmblyModule(ReactApplicationContext reactContext) {
@@ -35,7 +36,7 @@ public class AmblyModule extends ReactContextBaseJavaModule {
 
         File f = new File(path);
         if (!f.mkdirs() && !f.isDirectory()) {
-            Log.e("AmblyModule", "Can't create directory " + path);
+            Log.e(TAG, "Can't create directory " + path);
             return false;
         }
 
