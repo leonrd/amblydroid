@@ -1,6 +1,6 @@
-package com.amblydroid;
+package io.leonrd.amblydroid;
 
-import com.amblydroid.modules.AmblyModule;
+import io.leonrd.amblydroid.modules.AmblyModule;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.JavaScriptModule;
 import com.facebook.react.bridge.NativeModule;

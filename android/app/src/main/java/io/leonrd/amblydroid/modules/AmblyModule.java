@@ -1,4 +1,4 @@
-package com.amblydroid.modules;
+package io.leonrd.amblydroid.modules;
 
 import android.util.Log;
 

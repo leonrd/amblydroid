@@ -1,9 +1,10 @@
-package com.amblydroid;
+package io.leonrd.amblydroid;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.KeyEvent;
 
+import com.amblydroid.BuildConfig;
 import com.facebook.react.LifecycleState;
 import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.ReactRootView;
