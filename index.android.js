@@ -12,7 +12,12 @@ var {
   View,
 } = React;
 
+var Ambly = require('./Ambly');
+
 var amblydroid = React.createClass({
+  componentDidMount: function() {
+    Ambly.AMBLY_IMPORT_SCRIPT('hello.js');
+  },
   render: function() {
     return (
       <View style={styles.container}>
