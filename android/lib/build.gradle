@@ -1,11 +1,10 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.1"
 
     defaultConfig {
-        applicationId "io.leonrd.amblydroid"
         minSdkVersion 16
         targetSdkVersion 23
         versionCode 1
@@ -13,7 +12,6 @@ android {
         ndk {
             abiFilters "armeabi-v7a", "x86"
         }
-
     }
     buildTypes {
         release {
@@ -26,8 +24,5 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:23.0.1'
-    compile (project(':lib')) {
-        exclude group:'com.facebook.react'
-    }
     compile 'com.facebook.react:react-native:0.11.+'
 }

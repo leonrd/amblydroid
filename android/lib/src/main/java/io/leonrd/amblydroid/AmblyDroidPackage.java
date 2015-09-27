@@ -1,6 +1,5 @@
 package io.leonrd.amblydroid;
 
-import io.leonrd.amblydroid.modules.AmblyModule;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.JavaScriptModule;
 import com.facebook.react.bridge.NativeModule;
@@ -9,6 +8,8 @@ import com.facebook.react.uimanager.ViewManager;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import io.leonrd.amblydroid.modules.AmblyModule;
 
 public class AmblyDroidPackage implements ReactPackage {
 
